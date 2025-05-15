@@ -7,13 +7,14 @@ public class Prestec {
     private Llibre llibre;
     private LocalDate dataPrestec;
     private LocalDate dataRetorn;
-    private int maxLlibresPrestats = 10;
+    private int limitPrestecs;
 
     public Prestec(Usuari usuari, Llibre llibre, LocalDate dataPrestec) {
         this.usuari = usuari;
         this.llibre = llibre;
         this.dataPrestec = dataPrestec;
         this.dataRetorn = dataPrestec.plusWeeks(2);
+        this.limitPrestecs = 10;
     }
 
     public Usuari getUsuari() {
@@ -26,5 +27,9 @@ public class Prestec {
 
     public LocalDate getDataRetorn() {
         return dataRetorn;
+    }
+
+    public int getLimitsPrestecs() {
+        return limitPrestecs;
     }
 }
