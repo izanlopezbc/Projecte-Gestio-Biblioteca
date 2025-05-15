@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestorBiblioteca {
-    private List<Prestec> prestecs;
+    private List<Prestec> prestecs; 
 
     public GestorBiblioteca() {
         this.prestecs = new ArrayList<>();
