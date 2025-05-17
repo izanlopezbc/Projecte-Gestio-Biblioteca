@@ -1,6 +1,4 @@
-
 public class Llibre {
-
     private String titol;
     private String autor;
     private boolean prestat;
@@ -11,25 +9,18 @@ public class Llibre {
         this.prestat = false;
     }
 
-    public String getTitol() {
-        return titol;
-    }
+    // Getters
+    public String getTitol() { return titol; }
+    public String getAutor() { return autor; }
+    public boolean esPrestat() { return prestat; }
 
-    public String getAutor() {
-        return autor;
-    }
+    // Setters (para modificar libro)
+    public void setTitol(String titol) { this.titol = titol; }
+    public void setAutor(String autor) { this.autor = autor; }
 
-    public boolean esPrestat() {
-        return prestat;
-    }
-
-    public void prestar() {
-        prestat = true;
-    }
-
-    public void retornar() {
-        prestat = false;
-    }
+    // Métodos de préstamo
+    public void prestar() { prestat = true; }
+    public void retornar() { prestat = false; }
 
     @Override
     public String toString() {
